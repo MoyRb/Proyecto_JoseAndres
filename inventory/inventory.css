@@ -1,0 +1,20 @@
+/* Estilos específicos para el módulo de inventario */
+#productForm {
+    margin-bottom: 2rem;
+}
+
+#productsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#productsTable th,
+#productsTable td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#productsTable th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Hedelmia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Sistema de Gestión Hedelmia</h1>
+        <nav>
+            <ul>
+                <li><a href="#inventory">Inventario</a></li>
+                <li><a href="#production">Producción</a></li>
+                <li><a href="#sales">Ventas</a></li>
+                <li><a href="#finance">Finanzas</a></li>
+                <li><a href="#reports">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones principales -->
+    <main>
+        <section id="inventory">
+            <h2>Inventario</h2>
+            <p>Administra tus productos y existencias.</p>
+            <button onclick="loadModule('inventory')">Ir a Inventario</button>
+        </section>
+
+        <section id="production">
+            <h2>Producción</h2>
+            <p>Gestiona tus procesos de fabricación.</p>
+            <button onclick="loadModule('production')">Ir a Producción</button>
+        </section>
+
+        <section id="sales">
+            <h2>Ventas</h2>
+            <p>Registra y administra tus ventas.</p>
+            <button onclick="loadModule('sales')">Ir a Ventas</button>
+        </section>
+
+        <section id="finance">
+            <h2>Finanzas</h2>
+            <p>Gestiona tus ingresos y gastos.</p>
+            <button onclick="loadModule('finance')">Ir a Finanzas</button>
+        </section>
+
+        <section id="reports">
+            <h2>Reportes</h2>
+            <p>Genera y consulta tus reportes financieros.</p>
+            <button onclick="loadModule('reports')">Ir a Reportes</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión Empresarial</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Módulo de Finanzas</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="finance.css" />
+</head>
+<body>
+    <header>
+        <h1>Módulo de Finanzas</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Volver al Menú Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registrar Transacción</h2>
+            <form id="transactionForm">
+                <label for="type">Tipo de Transacción:</label>
+                <select id="type" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="Ingreso">Ingreso</option>
+                    <option value="Egreso">Egreso</option>
+                </select><br />
+
+                <label for="description">Descripción:</label>
+                <input type="text" id="description" required /><br />
+
+                <label for="amount">Monto:</label>
+                <input type="number" id="amount" step="0.01" min="0" required /><br />
+
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" required /><br />
+
+                <button type="submit">Registrar Transacción</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Balance General</h2>
+            <div id="balanceSummary">
+                <p><strong>Ingresos Totales:</strong> $<span id="totalIncome">0.00</span></p>
+                <p><strong>Egresos Totales:</strong> $<span id="totalExpenses">0.00</span></p>
+                <p><strong>Saldo Neto:</strong> $<span id="netBalance">0.00</span></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Listado de Transacciones</h2>
+            <table id="transactionsTable">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripción</th>
+                        <th>Monto</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las transacciones se cargarán aquí -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión Hedelmia</p>
+    </footer>
+
+    <script src="finance.js"></script>
+</body>
+</html>

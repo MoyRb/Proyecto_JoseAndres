@@ -1,0 +1,38 @@
+/* Estilos específicos del módulo de reportes */
+#filterForm {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#filterForm input {
+    padding: 0.5rem;
+}
+
+.summary {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#filteredData {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#filteredData th,
+#filteredData td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+#filteredData th {
+    background-color: #f2f2f2;
+}

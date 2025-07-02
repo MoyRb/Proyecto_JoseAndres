@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Módulo de Reportes</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="reports.css" />
+</head>
+<body>
+    <header>
+        <h1>Módulo de Reportes</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Volver al Menú Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Filtrar Datos por Fechas</h2>
+            <form id="filterForm">
+                <label for="startDate">Fecha Inicial:</label>
+                <input type="date" id="startDate" required />
+
+                <label for="endDate">Fecha Final:</label>
+                <input type="date" id="endDate" required />
+
+                <button type="submit">Generar Reporte</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Resumen General</h2>
+            <div class="summary">
+                <p><strong>Total Ventas:</strong> <span id="totalSales">0</span></p>
+                <p><strong>Total Ingresos:</strong> $<span id="totalIncome">0.00</span></p>
+                <p><strong>Total Egresos:</strong> $<span id="totalExpenses">0.00</span></p>
+                <p><strong>Balance Neto:</strong> $<span id="netBalance">0.00</span></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Listado de Registros Filtrados</h2>
+            <table id="filteredData">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripción / Producto</th>
+                        <th>Monto / Cantidad</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos filtrados aparecerán aquí -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Exportar Datos</h2>
+            <button onclick="exportToCSV()">Exportar a CSV</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión Hedelmia</p>
+    </footer>
+
+    <script src="reports.js"></script>
+</body>
+</html>

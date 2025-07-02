@@ -1,0 +1,29 @@
+/* Estilos específicos del módulo de ventas */
+#saleForm {
+    margin-bottom: 2rem;
+}
+
+#saleForm input,
+#saleForm select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    box-sizing: border-box;
+}
+
+#salesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#salesTable th,
+#salesTable td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+#salesTable th {
+    background-color: #f2f2f2;
+}

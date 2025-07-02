@@ -1,0 +1,29 @@
+/* Estilos específicos del módulo de producción */
+#productionForm {
+    margin-bottom: 2rem;
+}
+
+#productionForm input,
+#productionForm select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    box-sizing: border-box;
+}
+
+#productionTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#productionTable th,
+#productionTable td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+#productionTable th {
+    background-color: #f2f2f2;
+}
